@@ -11,9 +11,25 @@ function Player(x,y,w,h,col){
   }//end display 
   
   this.update = function(){
+    //this is the right arrow
     if(keyIsDown(39)){
       //the arrow is clicked
       this.x += this.speed
+    }
+    //this is the up arrow
+    if(keyIsDown(40)){
+      //the arrow is clicked
+      this.y += this.speed
+    }
+     //this is the left arrow
+    if(keyIsDown(37)){
+      //the arrow is clicked
+      this.x -= this.speed
+    }
+     //this is the down arrow
+    if(keyIsDown(38)){
+      //the arrow is clicked
+      this.y -= this.speed
     }
     //you need an if block for each direction
     
