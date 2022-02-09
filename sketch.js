@@ -3,8 +3,7 @@ let w = [];
 function setup() {
   createCanvas(500, 400);
   p = new Player(200,200,50,50,"green");
-  w.push(new Wall(100,100,200,10,"yellow"));
-  w.push(new Wall(100,200,200,10,"yellow"));
+  createWalls();
 }
 
 function draw() {
@@ -15,4 +14,8 @@ function draw() {
     w[i].display();  
   }
   
+}
+function createWalls(){
+  w.push(new Wall(100,100,200,10,"yellow"));
+  w.push(new Wall(100,200,200,10,"yellow"));
 }
