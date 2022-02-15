@@ -28,7 +28,11 @@ function whereTo(direction){
       }//end if
       break;
     case 2:
-      
+      //the player is in room 2
+      if(direction == "down"){
+        room=1
+        drawRoomOne();
+      }
       break;
   }//end switch
 }//end whereTo
