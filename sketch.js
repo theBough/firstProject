@@ -40,6 +40,21 @@ function changeScreenTime(){
     p.y = height-p.h
     whereTo("up");
   }//end if
+  if(p.y > height){
+    //check to see if player went past the bottom
+    p.y =0
+    whereTo("down");
+  }//end if
+  if(p.x<0){
+    //check to see if player went off to the left
+    p.x = width-p.w
+    whereTo("left");
+  }//end if
+  if(p.x > width){
+    //check to see if player went off the right
+    p.x = 0
+    whereTo("right")
+  }//end if
 }//end changeScreenTime
 
 
