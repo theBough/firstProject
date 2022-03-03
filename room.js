@@ -1,4 +1,7 @@
-
+//if you have started making your own rooms, then
+//just copy the "drawRoom()" function
+//note: the name of the rooms on line 7
+//needs to match what you called them down below
 function drawRoom() {
  rooms = [
       [startRoom,blankRoom]
