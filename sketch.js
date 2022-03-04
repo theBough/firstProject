@@ -4,21 +4,21 @@ let rooms
 let row,column;
 function setup() {
   createCanvas(500, 400);
-  p = new Player(200,200,50,50,"#ffff33");
-  row = 0;
-  column = 0;  
+  p = new Player(200,200,10,10,"#ffff33");
+  row = 1;
+  column = 1;  
   drawRoom();
 }
 function draw() {
   background("#33ccff");
   p.display();
   p.update();
-
+  noStroke();
   for(var i=0 ; i < w.length ; i++){
     w[i].display();  
   }
   rooms[row][column].call();
-  checkForCollission();
+  checkForCollision();
   changeScreenTime();  
 }
 function changeScreenTime(){
@@ -45,5 +45,4 @@ function changeScreenTime(){
    column+=1;
   }//end if
 }//end changeScreenTime
-
 
