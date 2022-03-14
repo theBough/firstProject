@@ -11,7 +11,7 @@ function setup() {
   column = 0;
   p = new Player(200,150,10,10,"#ffff33");
   e= new Enemy(50,50,20,20);
-  fillRooms();
+  drawRooms();
 }
 function draw() {
   background("#33ccff");
