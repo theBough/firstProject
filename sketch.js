@@ -8,20 +8,22 @@ function setup() {
   createCanvas(500, 400);
   noStroke();
   row = 1;
-  column = 0;
+  column = 1;
   p = new Player(200,150,10,10,"#ffff33");
   e= new Enemy(50,50,20,20);
-  drawRooms();
+  drawRoom();
 }
 function draw() {
   background("#33ccff");
   p.display();
   p.update();
+  
   rooms[row][column].call();
   for(var i=0 ; i < w.length ; i++){
     w[i].display();  
   }
   e.display();
+  e.update();
   checkForCollision();
   changeScreenTime();  
 }
@@ -52,5 +54,4 @@ function changeScreenTime(){
     
   }//end if
 }//end changeScreenTime
-
 
