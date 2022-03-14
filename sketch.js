@@ -22,7 +22,7 @@ function draw() {
     w[i].display();  
   }
   e.display();
-  checkForCollission();
+  checkForCollision();
   changeScreenTime();  
 }
 function changeScreenTime(){
